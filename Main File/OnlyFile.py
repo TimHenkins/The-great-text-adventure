@@ -3,6 +3,8 @@ Hall2 = 0
 Patroll = 0
 Hall1 = 0
 Hall3 = 0
+CBlock = 0
+
 
 items = ['knife', 'spoon', 'fork', 'shovel', 'drugs', 'hammer', 'bleach', 'screwdriver', 'keys', 'tazer', 'letter', 'loosetie', 'showerhead']
 inventory = []
@@ -66,7 +68,7 @@ while Hall1 == 1:
         y = 0
     if "move" and "left" in move:
         print "You move into the cell block"
-        C_Block = 1
+        CBlock = 1
         Hall1 = 0
     if ("move" and "left") in move:
         print "you move into the showers, don't drop the soap..."
