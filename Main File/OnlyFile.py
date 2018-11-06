@@ -1,6 +1,7 @@
 Cell = 1
 Hall2 = 0
 Patroll = 0
+Hall1 = 0
 
 
 items = ['knife', 'spoon', 'fork', 'shovel', 'drugs', 'hammer', 'bleach', 'screwdriver', 'keys', 'tazer', 'letter', 'loosetie', 'showerhead']
