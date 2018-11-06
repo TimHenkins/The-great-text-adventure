@@ -5,6 +5,7 @@ Hall1 = 0
 Hall3 = 0
 CBlock = 0
 HallO = 0
+yard = 0
 
 
 items = ['knife', 'spoon', 'fork', 'shovel', 'drugs', 'hammer', 'bleach', 'screwdriver', 'keys', 'tazer', 'letter', 'loosetie', 'showerhead']
@@ -117,6 +118,15 @@ while canteen == 1:
         HallO = 1
         canteen = 0
         
+wee = 1
+while yard == 1:
+    if wee == 1:
+        ack = raw_input("What do you do?")
+        wee = 0
+    if ("move" and "back") in ack:
+        print "You move back into the hall,to your front is the yard, to your left and right are halls, behind you is another hallway to your cell"
+        yard = 0
+        Hall3 = 1
         
 hodor = 1
 while shower == 1:
