@@ -104,4 +104,19 @@ while HallO == 1:
         kitchen = 1
     if ("move" and "right") in muuv:
         print "You move into the canteen"
-
+        
+hodor = 1
+while shower == 1:
+    if hodor ==1
+        knute = raw_input("What do you do?")
+        hodor = 0
+    if ("move" and "outside") in knute:
+        print "you move outside, to your left is the shower, and to your right is the canteen"
+        shower = 0
+        HallO = 1
+    
+ 
+  
+        
+        
+        
