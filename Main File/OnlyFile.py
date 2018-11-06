@@ -73,6 +73,7 @@ while Hall1 == 1:
         Hall1 = 0
     if ("move" and "left") in move:
         print "you move into the showers, don't drop the soap..."
+        print "You see a perfectly ordinary room of showers"
         Shower = 1
         Hall1 = 0
     if ("move" and "left") in move:
