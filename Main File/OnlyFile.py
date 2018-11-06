@@ -4,6 +4,7 @@ Patroll = 0
 Hall1 = 0
 Hall3 = 0
 CBlock = 0
+HallO = 0
 
 
 items = ['knife', 'spoon', 'fork', 'shovel', 'drugs', 'hammer', 'bleach', 'screwdriver', 'keys', 'tazer', 'letter', 'loosetie', 'showerhead']
@@ -91,4 +92,15 @@ while Hall3 == 1:
         Hall3 = 0
         HallO = 1 
 
+while HallO == 1:
+    print 'You enter a hall, to your right is the canteent, to your left is the kitchen"
+    if j ==1:
+        muuv = raw_input("What do you do")
+        j = 0
+    if ("move" and "left") in muuv:
+        print "you move into the kitchen"
+        HallO = 0
+        kitchen = 1
+    if ("move" and "right") in muuv:
+        print "You move into the canteen"
 
