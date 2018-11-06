@@ -104,6 +104,9 @@ while HallO == 1:
         kitchen = 1
     if ("move" and "right") in muuv:
         print "You move into the canteen"
+        HallO = 0
+        canteen = 1
+
         
 hodor = 1
 while shower == 1:
