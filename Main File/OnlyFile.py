@@ -106,7 +106,17 @@ while HallO == 1:
         print "You move into the canteen"
         HallO = 0
         canteen = 1
-
+        
+ugh_killme = 1
+while canteen == 1:
+    if ugh_killme ==1
+        buehler = raw_input("What do you do?")
+        ugh_killme = 0
+    if ("move" and "outside") in buehler:
+        print "You move out into the hall, to your right is the canteent, to your left is the kitchen"
+        HallO = 1
+        canteen = 0
+        
         
 hodor = 1
 while shower == 1:
