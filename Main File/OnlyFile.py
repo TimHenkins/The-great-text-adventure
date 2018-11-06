@@ -6,27 +6,26 @@ Patroll = 0
 items = ['knife', 'spoon', 'fork', 'shovel', 'drugs', 'hammer', 'bleach', 'screwdriver', 'keys', 'tazer', 'letter', 'loosetie', 'showerhead']
 inventory = []
 def invento(a):
-inventory.append(a)
+    inventory.append(a)
 
 r=1
 while Cell == 1:
-  print "You awaken from your bed on a cold and stormy night to find that your cell door has been mysteriously left open."
-  print "You wonder if this is a trap or if this is your lucky day."
-  print "It is up to you to take advantage of this situation and ESCAPE."
-  if r == 1:
-    moov = raw_input("what do you do?")
-    r = 0
-  if ("move" and "outside" and "cell") or ("move" and "in" and "cell") in moov:
-    print "You move outside your cell"
-    Cell = 0
-    Hall2 = 1
+    print "You awaken from your bed on a cold and stormy night to find that your cell door has been mysteriously left open."
+    print "You wonder if this is a trap or if this is your lucky day."
+    print "It is up to you to take advantage of this situation and ESCAPE."
+    if r == 1:
+        moov = raw_input("what do you do?")
+        r = 0
+    if ("move" and "outside" and "cell") or ("move" and "in" and "cell") in moov:
+        print "You move outside your cell"
+        Cell = 0
+        Hall2 = 1
 
 
-
+t = 0
 p = 1
 while Hall2 == 1:
   u = 1
-  t = 0
   if p == 1:
     print "Standing in front of your cell, you see a cell block in front of you, a hall to your left and right, and your cell behind you."
     p = 0
@@ -59,46 +58,34 @@ while Hall2 == 1:
     invento("drugs")
 
 while Hall1 == 1:
-  y = 1
-  print "You enter the hall, to your left is a cell block, to your right are the showers"
-  if y == 1:
-    move = raw_input("What do you do?")
-    y = 0
-  if "move" and "left" in move:
-    print "You move into the cell block"
-    C_Block = 1
-    Hall1 = 0
-  if ("move" and "left") in move:
-    print "you move into the showers, don't drop the soap..."
-    Shower = 1
-    Hall1 = 0
-  if ("move" and "left") in move:
-    print "you move back into the hall outside your cell"
-    Hall2 = 1
-    Hall1 = 0
-    while Hall3 == 1:
+    y = 1
+    print "You enter the hall, to your left is a cell block, to your right are the showers"
+    if y == 1:
+        move = raw_input("What do you do?")
+        y = 0
+    if "move" and "left" in move:
+        print "You move into the cell block"
+        C_Block = 1
+        Hall1 = 0
+    if ("move" and "left") in move:
+        print "you move into the showers, don't drop the soap..."
+        Shower = 1
+        Hall1 = 0
+    if ("move" and "left") in move:
+        print "you move back into the hall outside your cell"
+        Hall2 = 1
+        Hall1 = 0
+    
+while Hall3 == 1:
     print "you enter a long hall, to your left and right are two other halls, directly in front of you is the door to the yard"
-  if me == 1:
-    mo = raw_input("What do you do?")
-    me = 0
-  if ("move" and "left") in move:
-    Hall3 = 0
-    Hall4 = 1
-  if ("move" and "right") in move:
-    Hall3 = 0
-    HallO = 1 
-
-
-
-if ("inspect"and "room") in moov:
-  print "Over in the corner you see a toilet that connects to the sewer system and opposite of that is your bed and desk"
-if ("inspect" and "desk")in moov:
-  print "There is a drawer in your desk that could be opened"
-if ("open" and "drawer")in moov:
-  print "inside the desk you find a note. It reads,"
-  print " In order to leave the prison, ypu have two options. Either brute force your way through the front door, or escape through the sewer system which puts you out in the forest outside of the prison."
-  print "The choice is yours. Either way, Best of Luck and Happy Hunting."
-  print "Your ally,"
-  print "anonymous"
+    if me == 1:
+        mo = raw_input("What do you do?")
+        me = 0
+    if ("move" and "left") in move:
+        Hall3 = 0
+        Hall4 = 1
+    if ("move" and "right") in move:
+        Hall3 = 0
+        HallO = 1 
 
 
