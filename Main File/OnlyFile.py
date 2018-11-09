@@ -14,28 +14,36 @@ def invento(a):
     inventory.append(a)
 
 
+r=1
+o=1
+q=3
 while Cell == 1:
-    print "You awaken from your bed on a cold and stormy night to find that your cell door has been mysteriously left open."
-    print "You wonder if this is a trap or if this is your lucky day."
-    print "It is up to you to take advantage of this situation and ESCAPE."
+    if o == 1:
+        print "You awaken from your bed on a cold and stormy night to find that your cell door has been mysteriously left open."
+        print "You wonder if this is a trap or if this is your lucky day."
+        print "It is up to you to take advantage of this situation and ESCAPE."
+        o = 0
     if r == 1:
         moov = raw_input("what do you do?")
-        r = 0
-    if ("move" and "outside" and "cell") or ("move" and "in" and "cell") in moov:
+        
+    if ("inspect cell") in moov:
+        print "In the corner of your cell you see a toilet next to your bed with a work desk."
+        moov = ""
+    if ("inspect" and "toilet") in moov:
+        print "if you had a screwdriver,you might be able to remove the toilet."
+    if ("inspect" and  "desk") in moov:
+        print "on the desk you see a note."
+        q=4
+    if q==4 and ("read" and "note") in moov:
+        print "Today is your lucky day. You have one chance to escape. Make it COUNT!"
+        print "You have two options. You can either escape through the sewer system or brute force your way out."
+        print "Best of luck, see you on the outside"
+        print "Your friend,"
+        print "The DEVS"
+    if ("move" and "outside") in moov:
         print "You move outside your cell"
         Cell = 0
         Hall2 = 1
-
-    if ("inspect"and "room") in moov:
-        print "Over in the corner you see a toilet that connects to the sewer system and opposite of that is your bed and desk"
-    if ("inspect" and "desk")in moov:
-        print "There is a drawer in your desk that could be opened"
-    if ("open" and "drawer")in moov:
-        print "inside the desk you find a note. It reads,"
-        print " In order to leave the prison, ypu have two options. Either brute force your way through the front door, or escape through the sewer system which puts you out in the forest outside of the prison."
-        print "The choice is yours. Either way, Best of Luck and Happy Hunting."
-        print "Your ally,"
-        print "anonymous"
 
 
 
