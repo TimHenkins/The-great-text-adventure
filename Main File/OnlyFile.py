@@ -112,7 +112,59 @@ while Hall3 == 1:
         Hall3 = 0
         HallO = 1 
     
+ 
+j = 1 
+while HallO == 1:
+    print "You enter a hall, to your right is the canteent, to your left is the kitchen"
+    if j ==1:
+        muuv = raw_input("What do you do")
+        j = 0
+    if ("move" and "left") in muuv:
+        print "you move into the kitchen"
+        HallO = 0
+        kitchen = 1
+    if ("move" and "right") in muuv:
+        print "You move into the canteen"
+        HallO = 0
+        canteen = 1
         
+ugh_killme = 1
+while canteen == 1:
+    if ugh_killme == 1:
+        buehler = raw_input("What do you do?")
+        ugh_killme = 0
+    if ("move" and "outside") in buehler:
+        print "You move out into the hall, to your right is the canteent, to your left is the kitchen"
+        HallO = 1
+        canteen = 0
+        
+        
+
+
+wee = 1
+while yard == 1:
+    print "along the fence of the yard you sight an opening the fence, freedom"
+    if wee == 1:
+        ack = raw_input("What do you do?")
+        wee = 0
+    if ("move" and "back") in ack:
+        print "You move back into the hall,to your front is the yard, to your left and right are halls, behind you is another hallway to your cell"
+        yard = 0
+        Hall3 = 1
+    if ("move" and "opening"):
+        print "you win your freedom, you have won the game!!"
+        yard = 0
+
+        
+hodor = 1
+while shower == 1:
+    if hodor ==1:
+        knute = raw_input("What do you do?")
+        hodor = 0
+    if ("move" and "outside") in knute:
+        print "you move outside, to your left is the shower, and to your right is the canteen"
+        shower = 0
+        HallO = 1      
  
   
         
