@@ -43,27 +43,42 @@ while Cell == 1:
 
 
 
+t = 0
+p = 1
 while Hall2 == 1:
+  u = 1
+  if p == 1:
     print "Standing in front of your cell, you see a cell block in front of you, a hall to your left and right, and your cell behind you."
-    if u == 1:
-        dohall = raw_input("what do you do?")
-        u = 0
-    if ("move" and "left") in dohall:
-        print "You move to the left hall"
-        Hall2 = 0
-        Hall1 = 1
-    if ("move" and "right") in dohall:
-        print "You move the hall to your right"
-        Hall2 = 0
-        Hall3 = 1
-    if ("move" and "forward") in dohall:
-        print "You move into the cell block in front of you"
-        Hall2 = 0
-        CellB1 = 1
-    if ("move" and "backwards" or "back") in dohall:
-        print "You move back into your cell"
-        Hall2 = 0
-        Cell = 1
+    p = 0
+  if u == 1:
+    dohall = raw_input("what do you do?")
+    u = 0
+  if ("move" and "left") in dohall:
+    print "You move to the left hall"
+    Hall2 = 0
+    Hall1 = 1
+  if ("move" and "right") in dohall:
+    print "You move the hall to your right"
+    Hall2 = 0
+    Hall3 = 1
+  if ("move" and "forward") in dohall:
+    print "You move into the cell block in front of you"
+    Hall2 = 0
+    CellB1 = 1
+  if ("move" and "backwards" or "back") in dohall:
+    print "You move back into your cell"
+    Hall2 = 0
+    Cell = 1
+  if ("inspect" and "hall" or "room") in dohall:
+    print "You see a small tile slightly raised compared to the rest of the floor."
+  if ("inspect" and "tile" or "small tile") in dohall:
+    t = 1
+    print "You lift a small tile off the floor revealing a small satchel of a slurry of all drugs"
+  if t == 1 and ("take satchel") in dohall:
+    print "You take the small satchel of drugs"
+    invento("drugs")
+    t = 8
+
     
 
 while Hall1 == 1:
